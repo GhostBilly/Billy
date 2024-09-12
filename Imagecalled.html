@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            width: 400px;
+        }
+        .places{
+            display: flex;
+        }
+        .books{
+            display: flex;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Favirout</h1>
+    <button onclick="showall()"> Show All </button>
+    <button onclick="favPlaces()"> Places </button>
+    <button onclick="favBooks()"> Books </button>
+   <div class="complete">
+    <div class="places">
+        <div class="Japan">
+            <img src="https://static.independent.co.uk/2022/08/24/12/iStock-1146262403.jpg">
+            <h4>Japan</h4>
+            <p>Japan is an island country in East Asia, located in the Pacific Ocean off the northeast coast of the Asian mainland. It is bordered on the west by the Sea of Japan and extends from the Sea of Okhotsk in the north to the East China Sea in the south. </p>
+        </div> 
+        <div class="Belgium">
+            <img src="https://cdn.adventure-life.com/10/76/26/Ghent_Belgium/1300x820.webp">
+        <h4> Belgium </h4>
+        <p>Belgium, a country in Western Europe, is known for medieval towns, Renaissance architecture and as headquarters of the European Union and NATO. The country has distinctive regions including Dutch-speaking Flanders to the north, French-speaking Wallonia to the south and a German-speaking community to the east.</p>
+        </div>
+        <div class="South Korea">
+            <img src="https://ik.imgkit.net/3vlqs5axxjf/external/http://images.ntmllc.com/v4/destination/South-Korea/Seoul/219740_SCN_Seoul_iStock521707831_ZC35CD.jpg?tr=w-1200%2Cfo-auto">
+            <h4>South Korea</h4>
+            <p>South Korea, an East Asian nation on the southern half of the Korean Peninsula, shares one of the world’s most heavily militarized borders with North Korea. It’s equally known for its green, hilly countryside dotted with cherry trees and centuries-old Buddhist temples, plus its coastal fishing villages, sub-tropical islands and high-tech cities such as Seoul, the capital.</p>
+        </div>
+    </div>
+    <div class="books">
+        <div class="Inheritance">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1587396413i/52439531.jpg">
+            <h4>Inheritance Games</h4>
+            <p>Book by Jennifer Lynn Barnes</p>
+        </div>
+        <div class="The hill">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzFLfh-sP5siuAWi44n88qRg0T_eRrGMqxwflPM32-SYA59EVo_S-ZvRv065uVwEAk4v5_BBS1Mb2lZaSUkMQ37HlhV_eXCPuJ0NgYE2BQmIoXegYrXHPQVzIj9EzgVUPI2JBt1yIDPEp6/s1600/hill+framed.jpg">
+            <h4>The Hill</h4>
+            <p>Made by Karen Bass</p>
+        </div>
+    </div>
+   </div>
+   <script>
+    function showall(){
+        document.querySelector(".places").style.display="flex";
+        document.querySelector(".books").style.display="flex";
+    }
+    function favPlaces(){
+        document.querySelector(".places").style.display="flex";
+        document.querySelector(".books").style.display="none";    
+    }
+    function favBooks(){
+        document.querySelector(".books").style.display="flex";
+        document.querySelector(".places").style.display="none";    
+    }
+   </script>
+</body>
+</html>

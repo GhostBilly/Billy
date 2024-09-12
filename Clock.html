@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: yellow;
+            font-size: 70px;
+        }
+        body{
+            background-color: coral;
+        }
+        #clock{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            height: 300px;
+            font-size: 60px;
+            width: 800px;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Digital Clock</h1>
+    <div id="clock"><b>
+        <span>Current Time:</span>
+        <span id="Hrs">00</span>
+        <span>:</span>
+        <span id="min">00</span>
+        <span>:</span>
+        <span id="sec">00</span>
+
+    </b></div>
+
+
+    <script> 
+    var hrs=document.getElementById("Hrs");
+    var min=document.getElementById("min");
+    var sec=document.getElementById("sec");
+
+
+
+setInterval(function(){
+    hrs.innerHTML=new Date().getHours();
+    min.innerHTML=new Date().getMinutes();
+    sec.innerHTML=new Date().getSeconds();
+},1000)
+    </script>
+</body>
+</html>

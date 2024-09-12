@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bulb{
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            border:5px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="btn">
+    <button></button>
+</div>
+<div class="bulb">
+</div>
+
+<script>
+    var a =document.querySelector(".btn");
+    var b =document.querySelector(".bulb");
+    var flag=0;
+   
+    a.addEventListener("click",function(){
+        if(flag==0){
+            b.style.backgroundColor="yellow";
+            flag=1;
+        }
+        else{
+            b.style.backgroundColor="black";
+            flag =0;
+        }
+    })
+</script>
+</body>
+</html>

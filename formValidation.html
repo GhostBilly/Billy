@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form>
+    name: <input type="text" id="Name"><br>
+    sname:  <input type="text" id="Sname"><br>
+    age: <input type="number" id="age"><br>
+    email: <input type="email" id="email"><br>
+    password <input type="password" id="pass1"><br>
+    Verify password <input type="password" id="pass2"><br>
+    <input type="submit" onclick="Completed()">
+
+</form>
+<p id="Msg"></p>
+</body>
+<script>
+    function Completed(){
+        var p1=document.getElementById("pass1").value;
+        var p2=document.getElementById("pass2").value;
+        if(p1.length<6){
+            alert("Incomplete password");
+        }
+        if(p1.length==0){
+            alert("Complete password");
+        }
+        if(p1!==p2){
+            alert("Verify password");
+        }
+        var a=document.getElementById("age").value;
+        if(a<0 && a<=10){
+            document.getElementById("Msg").innerHTML=a;
+        }
+        else{
+            alert("invalid");
+        }
+    }
+</script>
+</html>

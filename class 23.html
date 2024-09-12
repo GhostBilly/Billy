@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cyan;
+            height: 800px;
+            width: 800px;
+            border: 3px;
+        }
+        .animation{
+            background-color: aquamarine;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            animation-name:Animation1;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+        }
+
+        @keyframes Animation1{
+            /* 0%{
+                top: 0px;
+                left: 0px;
+            }
+            20%{
+                top: 0px;
+                left: 500px;
+            }
+            40%{
+                top: 500px;
+                left: 500px;
+            }
+            60%{
+                top:500px ;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            } */
+            from{
+                top: 0px;
+                left: 400px;
+            }
+            to{
+                top: 800px;
+                left: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+    <div class="animation">
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: teal;
+            border: 3px solid black;
+            height: 500px;
+            width: 500px;
+        }
+        .animation{
+            background-color: orange;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            animation-name: animation2;
+            animation-duration: 5s;
+            animation-iteration-count: 5;
+        }
+
+        @keyframes animation2{
+            0%{
+                top: 0px;
+                left: 300px;
+            }
+            20%{
+                top: 100px;
+                left: 200px;
+            }
+            40%{
+                top: 150px;
+                left: 160px;
+            }
+            60%{
+                top: 200px;
+                left: 140px;
+            }
+            100%{
+                top: 120px;
+                left: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="animation">
+
+    </div>
+</div>
+</body>
+</html>

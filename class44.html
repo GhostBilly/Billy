@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .answer{
+            display: none;
+
+        }
+        .questions{
+            border: 5px;
+            padding: 10px;
+
+        }
+        button{
+            background-color: lightskyblue;
+            border: 20px;
+            border-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>frequently askes questions</h2>
+    <span class="faq-questions">
+<div class="questions" onclick="toggleAsnwer(1)"><button>what is your name</button></div>
+<div class="answer" id="answer1">my name is laasya</div>
+    </span>
+    <span class="faq-questions">
+        <div class="questions" onclick="toggleAsnwer(2)"><button>what is my age</button></div>
+        <div class="answer" id="answer2">i am 12</div>
+    </span>
+            <span class="faq-questions">
+                <div class="questions" onclick="toggleAsnwer(3)"><button>what is my fav subject</button></div>
+                <div class="answer" id="answer3">math and science</div>
+            </span>
+
+
+            <script>
+                function toggleAsnwer(num){
+                    document.getElementById("answer"+num).classList.toggle("answer");
+                }
+            </script>
+</body>
+</html>

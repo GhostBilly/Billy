@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            line-height:1;
+        }
+        .three{
+            text-align: center;
+            padding-bottom: 15px;
+            margin-left: 30px;
+        }
+        .one{
+            padding:20px;
+            display:flex;
+            flex-direction:column;
+            gap: 100px;
+      }
+      .input-types{
+        width:80%;
+      }
+      body{
+        background-color:peachpuff ;
+      }
+    
+    </style>
+</head>
+<body>
+    <div class="three">
+    <h4>Hackathon: Student Registeration Form</h4>
+    <hr>
+</div>
+   <form>
+    <small>Firstname</small><br>
+    <input type="text" placeholder="Firstname" class="input-types"><br><br>
+   
+    <small>Middlename</small><br>
+    <input type="Text" placeholder="Middlename" class="input-types"><br><br>
+</div>
+<div>
+    <small>Lastname</small><br>
+    <input type="Text" placeholder="Lastname" class="input-types"><br><br>
+</div>
+<div>
+    <small>course:</small>    <select>
+        <option value="A">A</option>
+        <option value="B">B </option>
+    </select>
+
+    <small>Gender:</small>
+    <input type="radio" name="ah" id="male">
+    <label for="male">Male</label>
+    <input type="radio" name="ah" id="female">
+    <label for="female">Female</label> 
+    <input type="radio" name="ah" id="other">
+ <br> <br>
+     <small>Current Address:</small><br>
+    <textarea rows=" 20" cols="20"> </textarea><br>
+    <small>Email</small><br>
+    <input type="email" placeholder="Enter Email" class="input-types"><br><br>
+    <small>Password</small><br>
+    <input type="password" placeholder="Enter Password" class="input-types"><br><br>
+    <small> Re-type password</small><br>
+    <input type="password" placeholder=" Re-type password" class="input-types"><br><br><br><br>
+    </div>
+    <div class="row">
+    <input type="submit" value="Register" class="input-types">
+    </div>
+</div>
+</form>
+
+</body>
+</html>
